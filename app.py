@@ -26,3 +26,6 @@ def contact():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0",debug=True)
+    from pyngrok import ngrok
+    url = ngrok.connect(5000).public_url
+    print(' * Tunnel URL:', url)
