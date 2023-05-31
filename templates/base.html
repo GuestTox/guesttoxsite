@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>GuestTox | Home</title>
+        <script src="\static\index.js"></script>
+        <link rel="stylesheet" href="static/css/style.css">
+        <link rel="shortcut icon" href="static/logo.png">
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-pages">
+                <a href="/"><p>Home</p></a>
+                <a href="about"><p>About</p></a>
+                <a href="projects"><p>Projects</p></a>
+                <a href="contact"><p>Contact</p></a>
+            </div>
+        </div>
+        <div class="torso">
+            {% block torso %}{% endblock %}
+        </div>
+        <footer class="footer">
+            <div class="upper-footer">
+                <h3>Powered by Songoda Technologies</h3>
+                <div class="footer-links">
+                    <a href="/"><p>Home</p></a>
+                    <a href="about"><p>About</p></a>
+                    <a href="projects"><p>Projects</p></a>
+                    <a href="contact"><p>Contact & Support</p></a>
+                    <a href=""><p>Songoda Technologies</p></a>
+                </div>
+            </div>
+            <div class="lower-footer">
+                <span id="day">25</span> <span id="month">May</span> <span id="year">2023</span> <span id="hour">17</span>:<span id="minutes">56</span>:<span id="seconds">00</span> GMT+1 | Oran, Algeria
+            </div>
+        </footer>
+    </body>
+</html>
